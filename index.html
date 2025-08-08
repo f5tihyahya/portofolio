@@ -2,59 +2,129 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Portofolio Saya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio [Namamu]</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* RESET STYLE */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
+
         header {
-            background: #007acc;
+            background: linear-gradient(135deg, #007acc, #005f99);
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
+
+        header h1 {
+            font-size: 2.5rem;
         }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #004c73;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
         h2 {
             color: #007acc;
+            margin-bottom: 10px;
         }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
         footer {
             background: #f1f1f1;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             font-size: 14px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Halo, saya [Namamu]</h1>
         <p>Web Developer | Designer | Programmer</p>
     </header>
 
-    <section>
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section id="tentang">
         <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang developer yang suka membuat website kreatif.</p>
+        <p>Saya adalah seorang developer yang suka membuat website kreatif dan fungsional. Saya memiliki minat di bidang desain UI/UX, pengembangan web, dan teknologi terbaru.</p>
     </section>
 
-    <section>
+    <section id="proyek">
         <h2>Proyek</h2>
         <ul>
-            <li>Website toko online</li>
-            <li>Aplikasi catatan</li>
-            <li>Portfolio pribadi</li>
+            <li>Website toko online - <a href="#">Lihat</a></li>
+            <li>Aplikasi catatan - <a href="#">Lihat</a></li>
+            <li>Portfolio pribadi - <a href="#">Lihat</a></li>
         </ul>
     </section>
 
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/username</a></p>
+        <p>GitHub: <a href="#">github.com/username</a></p>
+    </section>
+
     <footer>
-        <p>© 2025 [Namamu]</p>
+        <p>© 2025 [Namamu]. Dibuat dengan ❤ dan GitHub Pages.</p>
     </footer>
+
 </body>
 </html>
